@@ -83,7 +83,7 @@ check_branch() {
 export PS1="\[\033[0;90m\]\342\224\214\342\224\200" # Left Branch.
 	PS1+="[\[\033[0;92m\]\u\[\033[01;33m\]@\[\033[01;94m\]\h" # User and system.
 	PS1+="\[\033[0;90m\]]\342\224\200[\[\033[0;92m\]\W\[\033[0;90m\]]" # Path.
-	PS1+="\[\033[01;96m\]\$(check_branch)\[\033[0;31m\]\$(check_status) \[$(tput sgr0)\]" # Git status.
+	PS1+="\[\033[01;34m\]\$(check_branch)\[\033[0;31m\]\$(check_status) \[$(tput sgr0)\]" # Git status.
 	PS1+="\n\[\033[0;90m\]\342\224\224\342\224\200\342\224\200\342\225\274 \[\033[0m\]\[\e[01;33m\]\\$\[\e[0m\] " # Command line.
 
 unset color_prompt force_color_prompt
